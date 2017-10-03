@@ -1,0 +1,35 @@
+/*-- Cards styles
+#section-cards
+  column-count: 1
+  column-gap: 16px
+  padding: 16px
+  .cards-main
+    margin-bottom: 16px
+    border-radius: 0.3rem
+    overflow: hidden
+    column-count: 2
+    background-color: $theme--accent
+    @include box_shadow(1)
+    z-index: 5
+    article
+      h2
+        font-size: 18px
+        padding: 16px
+        margin: none
+      p
+        font-size: 14px
+    .cards-img
+      position: relative
+      display: block
+      width: 100%
+      height: auto
+      padding: 0
+      -webkit-clip-path: circle(100% at 0 50%)
+      -moz-clip-path: circle(100% at 0 50%)
+      -o-clip-path: circle(100% at 0 50%)
+      clip-path: circle(100% at 0 50%)
+
+/*-- Medium
+@media only screen and (min-width: 768px)
+  #section-cards
+    column-count: 2

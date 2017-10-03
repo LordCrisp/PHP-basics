@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 
 <html>
-<?php $strPageTitle = "Om os";
+<?php $strPageTitle = "Kontakt";
 //require $_SERVER["DOCUMENT_ROOT"] . "/PHP-basics/pages/incl/header.php";
 ?>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=11" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta charset="utf-8"/> -->
-    <link href="content/css/normalize.css" rel="stylesheet" />
-    <link href="content/css/bootstrap.css" rel="stylesheet" />
-    <link href="content/css/burgermenu.css" rel="stylesheet" />
-    <link href="content/css/main.css" rel="stylesheet" />
-    <link href="./favicon.ico" rel="shortcut icon" >
+    <link href="../../content/css/normalize.css" rel="stylesheet" />
+    <link href="../../content/css/burgermenu.css" rel="stylesheet" />
+    <link href="../../content/css/master.css" rel="stylesheet" />
+    <link href="../../favicon.ico" rel="shortcut icon" >
 
 
 </head>
 <!--BODY-->
 <body>
 
-  <?php require("pages/incl/header.php"); ?>
+  <?php require("incl/header.php"); ?>
+
+  <h1>Dette er en del af Øvelse 6 (Fil inkludering)</h1>
 
 
 
