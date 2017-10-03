@@ -1,0 +1,112 @@
+﻿/*#region GENERAL */
+
+@font-face {
+    font-family: 'font name';
+    src: url('/content/file.eot');
+    src: local('☺'), url('/content/file.woff') format('woff'), url('/content/file.ttf') format('truetype');
+}
+
+a{
+	text-decoration: none;
+	color: black;	
+}
+
+/*#endregion */
+
+
+/*#region HEADER */
+
+
+
+/*#endregion */
+
+
+/*#region MAIN */
+
+
+
+/*#endregion */
+
+
+/*#region FOOTER */
+
+
+
+/*#endregion */
+
+
+/*-------------------------------------------------
+    ------------------EXTRAS---------------------
+  -------------------------------------------------*/
+
+
+/*#region HELPERS */
+
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+/*BORDERS*/
+
+.border-black {
+	padding: 15px;
+	border: 4px solid black;
+	box-sizing: border-box;
+	margin: 12px;
+}
+
+.border-grey {
+	padding: 15px;
+	border: 4px solid grey;
+	box-sizing: border-box;
+	margin: 12px;
+}
+
+/*COLUMNS*/
+
+.col-left {
+	float: left;
+	width: 45%;
+}
+
+.col-right {
+	float: right;
+	width: 45%;
+	text-align: right;
+}
+
+.clear {
+	clear: both;
+	overflow: auto;
+}
+
+
+/*IMAGES*/
+
+.body-img {
+	background: url("../images/body.jpg") no-repeat center fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+/*TEXT MODS*/
+
+.text-border {
+	color: white;
+	text-shadow: 2px 0 purple, 0 2px purple, 2px 0 purple, 0 2px purple;
+}
+
+.btn-transparent {
+  color: #fff;
+  background-color: transparent;
+  border-color: none;
+}
+
+/*#endregion */
+
+/* DEVIDER */
+.devider-red {
+    border-top: 40px solid #c00;
+    display: block;
+}
