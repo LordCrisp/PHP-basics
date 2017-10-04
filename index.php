@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-<?php $strPageTitle = "Forside - Øvelser";
+<?php $strPageTitle = "Forside - PHP Øvelser";
 //require $_SERVER["DOCUMENT_ROOT"] . "/PHP-basics/pages/incl/header.php";
 ?>
 <head>

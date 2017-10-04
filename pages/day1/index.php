@@ -2,7 +2,7 @@
 
 <html lang="da">
 <!-- EXERCISE 4 1/2 (Variables as Title tag) See header.php for other half -->
-<?php $strPageTitle = "Forside - Dag 1";
+<?php $strPageTitle = "Dag 1";
 //require $_SERVER["DOCUMENT_ROOT"] . "/PHP-basics/pages/incl/header.php";
 ?>
 <head>
@@ -25,9 +25,7 @@
 <!--BODY-->
 <body>
 
-  <a href="../../index.php">Tilbage
-    <!-- <img src="../../content/images/back.svg"> --></a>
-  <section class="side1">
+  <?php include("incl/header.php");?>
 
   <h2>Øvelse 5 - Indsæt H1 tag via titel variablen & Øvelse 6 - Fil inkludering</h2>
   <pre> &lt;!-- EXERCISE 5 - Insert H1 tag with the Title variable --></pre>
@@ -53,7 +51,7 @@ _________________________________________________________________<br>
   <section class="side1">
     <h2>Øvelse 4 - Titel på siden via en PHP variable</h2>
   <pre> &lt;!-- EXERCISE 4 1/2 (Variables as Title tag) See header.php for other half --></pre>
-  <pre>&lt;?php $strPageTitle = "Forside - Dag 1";
+  <pre>&lt;?php $strPageTitle = "Dag 1";
   ?></pre>
 
   <h3>Taget fra header.php</h3>
