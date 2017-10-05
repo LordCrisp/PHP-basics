@@ -9,7 +9,8 @@
     <p>TILBAGE TIL FORSIDEN</p></a>
 
     <ul>
-      <li><a href="index.php">String Opgave 1</a></li>
+      <li><a href="index.php">String Opgave Start</a></li>
+      <li><a href="task1.php">String Opgave 1</a></li>
       <li><a href="task2.php">String Opgave 2</a></li>
       <li><a href="task3.php">String Opgave 3</a></li>
       <li><a href="task4.php">String Opgave 4</a></li>

@@ -25,15 +25,40 @@ $strTaskNr = "2";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<h4>Ændre alle bogstaver i teksterne til store bogstaver</h4> <br>
 
-  
+<!-- MOCK-CODE FOR SHOW -->
+  <pre>
+
+    &lt;?php
+
+    function toUpper($string) {
+      return (strtoupper(strtr($string, 'æøå','ÆØÅ' )));
+    };
+    $txt1 = toUpper ($txt1);
+    $txt2 = toUpper ($txt2);
+    ?>
+
+  </pre>
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
+<br></div>
+
+
+<!-- ACTUAL CODE -->
+
+
+
 
   <?php
 
     function toUpper($string) {
       return (strtoupper(strtr($string, 'æøå','ÆØÅ' )));
-};
+      };
     $txt1 = toUpper ($txt1);
     $txt2 = toUpper ($txt2);
   ?>

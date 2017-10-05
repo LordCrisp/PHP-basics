@@ -25,15 +25,42 @@ $strTaskNr = "6";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<?php $findE = stripos($txt1, "e");?>
 
-  
+<h4>Placeringen af det første "e" er:
+  <?php echo $findE ?></h4>
 
-  <?php $findE = stripos($txt1, "e");?>
+  <!-- MOCK-CODE FOR SHOW -->
+    <pre>
 
-  <h5>Placeringen af det første "e" er:</h5>
-  <?php echo $findE ?>
+      &lt;?php $findE = stripos($txt1, "e");?>
+
+      &lt;h4>Placeringen af det første "e" er:
+        &lt;?php echo $findE ?></h4>
+
+    </pre>
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
 <br>
+
+
+<!-- ACTUAL CODE -->
+
+
+
+
+<br>
+
+
+<h4>Placeringen af det første "e" er:
+  <?php echo $findE ?></h4>
+</div>
+  <br>
+  <br>
 
   <?php echo $txt1 ?>
 
@@ -42,7 +69,6 @@ $strTaskNr = "6";
   _____________________________________________________________________________<br>
   _____________________________________________________________________________<br>
   <br>
-
   <?php echo $txt2 ?>
 
 

@@ -25,11 +25,26 @@ $strTaskNr = "5";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<h4>At finde det 7 af et bestemt bogstav er ikke umiddelbart en ting PHP har en function til </h4> <br>
 
-  
+<!-- MOCK-CODE FOR SHOW -->
+  <pre>
 
-  <h3>At finde det 7 af et bestemt bogstav er ikke umiddelbart en ting PHP har en function til </h3>
+  </pre>
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
+<br></div>
+
+
+<!-- ACTUAL CODE -->
+
+
+
+
 
   <?php echo $txt1 ?>
 

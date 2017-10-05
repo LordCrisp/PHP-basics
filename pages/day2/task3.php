@@ -25,9 +25,33 @@ $strTaskNr = "3";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<h4>Ændre alle bogstaver i teksterne til små bogstaver</h4> <br>
 
-  
+<!-- MOCK-CODE FOR SHOW -->
+
+
+
+  <pre>
+
+    &lt;?php
+      $txt1 = strtolower ($txt1);
+      $txt2 = strtolower ($txt2);
+    ?>
+
+  </pre>
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
+<br></div>
+
+
+<!-- ACTUAL CODE -->
+
+
+
 
   <?php
     $txt1 = strtolower ($txt1);

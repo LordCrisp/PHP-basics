@@ -25,12 +25,31 @@ $strTaskNr = "10";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<h4>Tilfældig blanding af de to tekster</h4> <br>
+
+<!-- MOCK-CODE FOR SHOW -->
+  <pre>
+
+    &lt;?php $txt1 = str_shuffle($txt1); ?>
+
+    &lt;?php $txt2 = str_shuffle($txt2); ?>
+
+  </pre>
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
+<br></div>
+
+
+<!-- ACTUAL CODE -->
+
 
   <?php $txt1 = str_shuffle($txt1); ?>
 
   <?php $txt2 = str_shuffle($txt2); ?>
-
   <br>
   <?php echo $txt1; ?>
 <br>

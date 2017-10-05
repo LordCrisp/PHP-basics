@@ -25,9 +25,30 @@ $strTaskNr = "4";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<h4>Find "bo@somewhere.dk" i tekst 1 og erstat det med "bob@somewhere.dk"</h4> <br>
+
+<!-- MOCK-CODE FOR SHOW -->
+  <pre>
+
+    &lt;?php $txt1 = str_replace("bo@somewhere.dk", "bob@somewhere.dk", $txt1); ?>
+
+  </pre>
+
+
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
+<br></div>
+
+
+<!-- ACTUAL CODE -->
+
 
   <?php $txt1 = str_replace("bo@somewhere.dk", "bob@somewhere.dk", $txt1); ?>
+
 
   <?php echo $txt1 ?>
 

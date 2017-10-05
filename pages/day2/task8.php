@@ -25,7 +25,24 @@ $strTaskNr = "8";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<h4>Find "ikke" i tekst 2 og fjern det</h4> <br>
+
+<!-- MOCK-CODE FOR SHOW -->
+  <pre>
+
+    &lt;?php $txt2 = str_replace("ikke", "", $txt2); ?>
+
+  </pre>
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
+<br></div>
+
+
+<!-- ACTUAL CODE -->
 
 
 

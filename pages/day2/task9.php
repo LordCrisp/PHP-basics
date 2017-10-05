@@ -25,12 +25,28 @@ $strTaskNr = "9";
 <!--BODY-->
 <body>
 
-  <?php require("incl/header.php"); ?>
+<!-- HEADER -->
+<?php require("incl/header.php"); ?>
+<h4>Antallet af ens karaktere der er brugt mellem de to tekster er:
+  <?php echo similar_text($txt1,$txt2); ?> </h4> <br>
 
-  <?php echo similar_text($txt1,$txt2); ?>
+  <!-- MOCK-CODE FOR SHOW -->
+    <pre>
 
-  <br>
-  <br>
+      &lt;h4>Antallet af ens karaktere der er brugt mellem de to tekster er:
+        &lt;?php echo similar_text($txt1,$txt2); ?> &lt;/h4> <br>
+
+    </pre>
+  <div class="side2"><br>
+_____________________________________________________________________________<br>
+_________________________________RESULTAT___________________________________<br>
+_____________________________________________________________________________<br>
+<br></div>
+
+
+<!-- ACTUAL CODE -->
+
+
 
   <?php echo $txt1 ?>
 
