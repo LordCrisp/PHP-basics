@@ -27,7 +27,7 @@ $strTaskNr = "5";
 
   <?php require("incl/header.php"); ?>
 
-  <?php include("incl/variables.php"); ?>
+  
 
   <h3>At finde det 7 af et bestemt bogstav er ikke umiddelbart en ting PHP har en function til </h3>
 

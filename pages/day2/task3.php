@@ -27,7 +27,7 @@ $strTaskNr = "3";
 
   <?php require("incl/header.php"); ?>
 
-  <?php include("incl/variables.php"); ?>
+  
 
   <?php
     $txt1 = strtolower ($txt1);

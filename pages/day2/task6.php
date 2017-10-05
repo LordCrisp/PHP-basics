@@ -27,7 +27,7 @@ $strTaskNr = "6";
 
   <?php require("incl/header.php"); ?>
 
-  <?php include("incl/variables.php"); ?>
+  
 
   <?php $findE = stripos($txt1, "e");?>
 

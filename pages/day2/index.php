@@ -27,8 +27,6 @@ $strTaskNr = "1";
 
   <?php require("incl/header.php"); ?>
 
-  <?php include("incl/variables.php"); ?>
-
   <?php echo $txt1 ?>
 
   <br>

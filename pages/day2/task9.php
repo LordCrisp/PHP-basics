@@ -27,7 +27,10 @@ $strTaskNr = "9";
 
   <?php require("incl/header.php"); ?>
 
-  <?php include("incl/variables.php"); ?>
+  <?php echo similar_text($txt1,$txt2); ?>
+
+  <br>
+  <br>
 
   <?php echo $txt1 ?>
 

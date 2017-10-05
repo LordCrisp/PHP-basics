@@ -27,7 +27,9 @@ $strTaskNr = "8";
 
   <?php require("incl/header.php"); ?>
 
-  <?php include("incl/variables.php"); ?>
+
+
+  <?php $txt2 = str_replace("ikke", "", $txt2); ?>
 
 
   <?php echo $txt1 ?>

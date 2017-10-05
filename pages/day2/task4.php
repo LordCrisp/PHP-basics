@@ -27,55 +27,7 @@ $strTaskNr = "4";
 
   <?php require("incl/header.php"); ?>
 
-
-
-  <?php
-  /* --------------------------------------------------------------------------
-  ------------------------------EDIT VARIABLES---------------------------------
-  ---------------------------------------------------------------------------*/
-
-  $resName = "Bo Nicolajsen";
-  $sendName = "Tina";
-  $amount = "21.405,52 kr.";
-  $donRes = "Dyrenes beskyttelse";
-  $donName = "GeorgGiraf";
-  $email = "bo@somewhere.dk";
-
-  //$email = str_replace("bo", "bob", "bo@somewhere.dk");
-  $emailReplace = "bob@somewhere.dk";
-
-
-
-  /* --------------------------------------------------------------------------
-  ----------------------------------TEXTS--------------------------------------
-  ---------------------------------------------------------------------------*/
-
-  // FIRST TEXT
-  $txt1 = "Til $resName<br>
-  <br>
-  Vi skriver fordi der endnu er penge på din konto og den er blevet spærret.<br> Grundet vi har skiftet platform bedes du oprette din konto på ny med email adressen: $email <br>Efter oprettelse vil dine penge vente på din konto hvor du enten kan bruge dem eller få dem udbetalt.<br>
-  <br>
-  <br>
-  Beløb tilgængeligt opgjort pr. : $amount.<br>
-  <br>
-  venlig hilsen $sendName";
-
-
-  // SECOND TEXT
-  $txt2 = "Hej $sendName<br>
-  <br>
-  Da jeg er ufattelig rig, og derfor ikke har brug for pengene.<br> Ser jeg gerne at i
-  donere alle pengene til $donRes beskyttelse. Under navnet \"$donName\".<br>
-  <br>
-  Venlig hilsen $resName";
-
-
-
-  $email = str_replace($email, $emailReplace, $txt1);
-
-  ?>
-
-
+  <?php $txt1 = str_replace("bo@somewhere.dk", "bob@somewhere.dk", $txt1); ?>
 
   <?php echo $txt1 ?>
 

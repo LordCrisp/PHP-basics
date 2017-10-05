@@ -1,5 +1,7 @@
 <title><?php echo $strPageTitle ?></title>
 
+<?php include("variables.php"); ?>
+
 <header>
 
   <nav>
