@@ -2,7 +2,7 @@
 
 <html>
 <?php
-$strPageTitle = "Dag 2";
+$strPageTitle = "Strings";
 $strTaskNr = "3";
 ?>
 <head>
