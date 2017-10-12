@@ -14,7 +14,9 @@
 
 <!-- ACTUAL CODE -->
 <?php
-/* USER NAVIGATION LIMITER */
+/*--------------------------------------------------------------------------
+--------------------------USER NAVIGATION LIMITER---------------------------
+--------------------------------------------------------------------------*/
 session_start();
 
 
@@ -28,13 +30,6 @@ else {
 /* NAVIGATION VARIABLES */
   $navSelect = $_SESSION['x'];
   $navCount = count($userarray);
-
-
-
-
-print_r($navSelect);
-echo "<br>";
-print_r($navCount);
 ?>
 
 <!-- DYNAMIC BACK/FORWARD BUTTONS -->
@@ -61,7 +56,9 @@ print_r($navCount);
   </tr>
 
 <?php
-/* USER DATA EXTRACTION & CREATION FROM NESTED ARRAYS */
+/* -----------------------------------------------------------------------
+------------USER DATA EXTRACTION & CREATION FROM NESTED ARRAYS------------
+------------------------------------------------------------------------ */
 for ($i = $navSelect; $i < $navSelect + 10; $i++) {
   $userInfo = $userarray[$i];
 
@@ -83,20 +80,9 @@ switch ($myUserType) {
     break;
 
   default:
-    $myUserIcon = '<img src="img/guest.jpg">';
+    $myUserIcon = '<img src="img/guest.png">';
     break;
 }
-
-
-/* ALTERNATIVE ICON SELECTION */
-  /*  $myUserIcon = '<img src="img/guest.jpg">';
-
-  if ($myUserType == "admin") {
-    $myUserIcon = '<img src="img/admin.png">';
-  }
-  if ($myUserType == "user") {
-    $myUserIcon = '<img src="img/user.png">';
-  }*/
 
   echo "<tr>
           <td>$myUserName</td>
