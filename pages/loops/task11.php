@@ -25,15 +25,15 @@
 
       switch (true) {
         case ($i <= "5"):
-            $day =  "&lt;span style=\"color:blue;\">$i $day &lt;span>";
+            $day =  "&lt;span style=\"color:blue;\">$i $day &lt;/span>";
           break;
 
         case ($i == "6"):
-          $day = "&lt;span style=\"color:yellow;\">$i $day &lt;span>";
+          $day = "&lt;span style=\"color:yellow;\">$i $day &lt;/span>";
           break;
 
         default:
-          $day = "&lt;span style=\"color:red;\">$i $day &lt;span>";
+          $day = "&lt;span style=\"color:red;\">$i $day &lt;/span>";
           break;
       }
       echo "$day&lt;br>";
@@ -63,15 +63,15 @@
 
     switch (true) {
       case ($i <= "5"):
-          $day =  "<span style=\"color:blue;\">$i $day <span>";
+          $day =  "<span style=\"color:blue;\">$i $day </span>";
         break;
 
       case ($i == "6"):
-        $day = "<span style=\"color:yellow;\">$i $day <span>";
+        $day = "<span style=\"color:yellow;\">$i $day </span>";
         break;
 
       default:
-        $day = "<span style=\"color:red;\">$i $day <span>";
+        $day = "<span style=\"color:red;\">$i $day </span>";
         break;
     }
     echo "$day<br>";

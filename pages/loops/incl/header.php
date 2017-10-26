@@ -29,7 +29,7 @@
 <?php
   if($strTaskNr==6) {
     echo '<body class="loops6">';}
-    
+
   else {
     echo "<body>";}
 

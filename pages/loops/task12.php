@@ -13,23 +13,39 @@
 
 <!-- MOCK-CODE FOR SHOW -->
 
-<pre> &lt;?php
-  $tal = array();
-<span class="side2 comment">
-  $i = 0 gør at $i variablen starter med en værdi på 0 <br>
-  $i < 5 gør at loopet stopper inden det rammer 5 (5 gange, da det starter på 0)<br>
-  $i++ gør at den ligger 1 til for hver loop den laver
-</span>
-  for ($i = 0; $i < 5; $i++)
-  {
-    <span class="side2 comment">
-      $tal[] = $i + 10 laver en variabel som tager $i og smider en værdi på 10 oveni <br>
-    </span>
-    $tal[] = $i + 10;
-  }
+<pre> &lt;table>
+&lt;?php
+for ($i=1; $i <= 7; $i++) {
+  $day = "Sunday";
 
-  print_r($tal);
-  ?>
+  if($i==1) {$day = 'Monday';}
+  if($i==2) {$day = 'Tuesday';}
+  if($i==3) {$day = 'Wednesday';}
+  if($i==4) {$day = 'Thursday';}
+  if($i==5) {$day = 'Friday';}
+  if($i==6) {$day = 'Saturday';}
+
+  switch (true) {
+    case ($i <= "5"):
+        $color = "blue";
+      break;
+
+    case ($i == "6"):
+      $color = "yellow";
+      break;
+
+    default:
+      $color = "red";
+      break;
+  }
+  echo "&lt;tr style=\"color:$color\">
+        &lt;td>$i&lt;/td>
+        &lt;td>$day&lt;/td>
+        &lt;/tr>";
+}
+
+?>
+&lt;/table>
 </pre>
 
 
@@ -40,16 +56,39 @@ _____________________________________________________________________________<br
 <br></div>
 
 <!-- ACTUAL CODE -->
+<table>
 <?php
-$tal = array();
+for ($i=1; $i <= 7; $i++) {
+  $day = "Sunday";
 
-for ($i = 0; $i < 5; $i++)
-{
-  $tal[] = $i + 10;
+  if($i==1) {$day = 'Monday';}
+  if($i==2) {$day = 'Tuesday';}
+  if($i==3) {$day = 'Wednesday';}
+  if($i==4) {$day = 'Thursday';}
+  if($i==5) {$day = 'Friday';}
+  if($i==6) {$day = 'Saturday';}
+
+  switch (true) {
+    case ($i <= "5"):
+        $color = "blue";
+      break;
+
+    case ($i == "6"):
+      $color = "yellow";
+      break;
+
+    default:
+      $color = "red";
+      break;
+  }
+  echo "<tr style=\"color:$color\">
+        <td>$i</td>
+        <td>$day</td>
+        </tr>";
 }
 
-print_r($tal);
 ?>
+</table>
 
 <!-- FOOTER, SCRIPTS & BODY(end) -->
 <?php require("incl/footer.php")?>

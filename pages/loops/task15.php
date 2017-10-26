@@ -14,14 +14,23 @@
 <!-- MOCK-CODE FOR SHOW -->
 
 <pre> &lt;?php
-  $carBrands = array(
-    "VW" => "NaziSlæde",
-    "BMW" => "Bayerische Motoren Werke",
-    "MZ"  => "Mazda",
-    "FD" => "Ford Motor Company"
-  );
+  $x = 10;
 
-  print_r($carBrands);
+  for ($i=0; $i < 10 ; $i++) {
+    for ($j=0; $j < $x; $j++) {
+      if ($x & 1) {
+        if ($j == $x-1) {
+          echo "$j";
+        }
+        else {
+          echo "$j, ";
+        };
+      }
+    }
+    $x = $x - 1;
+    echo "&lt;/br>";
+  }
+
   ?>
 </pre>
 
@@ -34,14 +43,23 @@ _____________________________________________________________________________<br
 
 <!-- ACTUAL CODE -->
 <?php
-$carBrands = array(
-  "VW" => "NaziSlæde",
-  "BMW" => "Bayerische Motoren Werke",
-  "MZ"  => "Mazda",
-  "FD" => "Ford Motor Company"
-);
+$x = 10;
 
-print_r($carBrands);
+for ($i=0; $i < 10 ; $i++) {
+  for ($j=0; $j < $x; $j++) {
+    if ($x & 1) {
+      if ($j == $x-1) {
+        echo "$j";
+      }
+      else {
+        echo "$j, ";
+      };
+    }
+  }
+  $x = $x - 1;
+  echo "</br>";
+}
+
 ?>
 
 <!-- FOOTER, SCRIPTS & BODY(end) -->

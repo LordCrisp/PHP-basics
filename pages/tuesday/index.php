@@ -26,25 +26,55 @@ if(!empty($_GET['offset'])) {
 else {
   $_SESSION['x'] = 0;
 }
+$offset = $_SESSION['x'];
 
-/* NAVIGATION VARIABLES */
-  $navSelect = $_SESSION['x'];
-  $navCount = count($userarray);
-?>
 
-<!-- DYNAMIC BACK/FORWARD BUTTONS -->
-<ul class="userNav">
-  <?php
+userTable($offset, 10, $userarray);
+
+
+
+/* ------------------------------------------------------------------------
+-------------------------USERDATA TABLE FUNCTION---------------------------
+------------------------------------------------------------------------ */
+function userTable($navSelect, $gridSize, $userDataArray){
+
+/* ---------------------------ERROR TRACING--------------------------------
+------------------------------------------------------------------------ */
+if(gettype($userDataArray)!='array'){
+  return false;
+}
+
+if(gettype($userDataArray[0])!='array'){
+  return false;
+}
+
+
+/* -----------------------NAVIGATION VARIABLES----------------------------
+------------------------------------------------------------------------ */
+  $navCount = count($userDataArray);
+
+if($navSelect < 0) {
+  $navSelect = 0;
+  $_SESSION = 0;
+}
+
+if ($navSelect + $gridSize > $navCount){
+  $navSelect = $navCount - $gridSize;
+  $_SESSION = $navCount - $gridSize;
+}
+
+// DYNAMIC BACK/FORWARD BUTTONS
+echo '<ul class="userNav">';
+
   if($navSelect > 0) {
     echo '<li><a href="index.php?offset=-10">Forrige 10 Brugere</a></li>';
   }
-  if($navSelect < $navCount - 10) {
+  if($navSelect < $navCount - $gridSize) {
   echo '<li><a href="index.php?offset=10">Næste 10 Brugere</a></li>';
-}?>
-</ul>
+}
 
-
-<!-- USER TABLES -->
+//USER TABLES
+echo '</ul>
 <table>
   <tr>
     <th>Username</th>
@@ -53,14 +83,14 @@ else {
     <th>Password</th>
     <th>Account Type</th>
     <th>Type Icon</th>
-  </tr>
+  </tr>';
 
-<?php
-/* -----------------------------------------------------------------------
-------------USER DATA EXTRACTION & CREATION FROM NESTED ARRAYS------------
+/* ----------USER DATA EXTRACTION & CREATION FROM NESTED ARRAYS------------
 ------------------------------------------------------------------------ */
-for ($i = $navSelect; $i < $navSelect + 10; $i++) {
-  $userInfo = $userarray[$i];
+
+
+for ($i = $navSelect; $i < $navSelect + $gridSize; $i++) {
+  $userInfo = $userDataArray[$i];
 
   $myUserName = $userInfo['USERNAME'];
   $myFullName = $userInfo['FULL_NAME'];
@@ -93,20 +123,24 @@ switch ($myUserType) {
           <td>$myUserIcon</td>
         </tr>";
 };
-?>
 
-
-</table>
+echo '</table>
 
 <!-- DYNAMIC BACK/FORWARD BUTTONS -->
-<ul class="userNav">
-  <?php
+<ul class="userNav">';
+
   if($navSelect > 0) {
     echo '<li><a href="index.php?offset=-10">Forrige 10 Brugere</a></li>';
   }
-  if($navSelect < $navCount - 10) {
+  if($navSelect < $navCount - $gridSize) {
   echo '<li><a href="index.php?offset=10">Næste 10 Brugere</a></li>';
-}?>
+}
+};
+
+/* ---------------------------FUNCTION END-------------------------------
+------------------------------------------------------------------------ */
+
+?>
 </ul>
 
 <!-- FOOTER, SCRIPTS & BODY(end) -->

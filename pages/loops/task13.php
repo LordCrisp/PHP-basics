@@ -14,13 +14,15 @@
 
 <!-- MOCK-CODE FOR SHOW -->
 
-<pre> &lt;?php
-   $kategorier = array("M" => "Mænd", "K" => "Kvinder", "U" => "Ukendt");
-   foreach($kategorier as $key => $value) {
-      echo "Key: ". $key . " Value: " . $value;
-      echo "<br />";
-   }
+<pre> &lt;ul class="navigation">
+&lt;?php
+  for ($i=65; $i <=90 ; $i++) {
+    $char = chr($i);
+
+    echo "&lt;li>&lt;a href="#">$char&lt;/a>&lt;/li>";
+    }
 ?>
+&lt;/ul>
 </pre>
 
 
@@ -31,13 +33,15 @@ _____________________________________________________________________________<br
 <br></div>
 
 <!-- ACTUAL CODE -->
+<ul class="navigation">
 <?php
-   $kategorier = array("M" => "Mænd", "K" => "Kvinder", "U" => "Ukendt");
-   foreach($kategorier as $key => $value) {
-      echo "Key: ". $key . " Value: " . $value;
-      echo "<br />";
-   }
+  for ($i=65; $i <=90 ; $i++) {
+    $char = chr($i);
+
+    echo "<li><a href=\"#\">$char</a></li>";
+    }
 ?>
+</ul>
 
 <!-- FOOTER, SCRIPTS & BODY(end) -->
 <?php require("incl/footer.php")?>

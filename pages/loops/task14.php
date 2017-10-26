@@ -13,15 +13,25 @@ Udskriv arrayet med print_r.</h4> <br>
 
 <!-- MOCK-CODE FOR SHOW -->
 
-<pre> &lt;?php
+<pre> &lt;$x = 10;
 
-  $colors[] = "Blå";
-  $colors[] = "Rød";
-  $colors[] = "Grøn";
-  $colors[] = "Gul";
+for ($i=0; $i < 10 ; $i++) {
 
-  print_r($colors);
-  ?>
+  for ($j=0; $j < $x; $j++) {
+
+    if ($j == $x-1) {
+      echo "$j";
+    }
+    else {
+      echo "$j, ";
+    };
+
+  }
+  
+  $x = $x - 1;
+  echo "&lt;/br>";
+}
+
 </pre>
 
 
@@ -33,13 +43,21 @@ _____________________________________________________________________________<br
 
 <!-- ACTUAL CODE -->
 <?php
+$x = 10;
 
-$colors[] = "Blå";
-$colors[] = "Rød";
-$colors[] = "Grøn";
-$colors[] = "Gul";
+for ($i=0; $i < 10 ; $i++) {
+  for ($j=0; $j < $x; $j++) {
+    if ($j == $x-1) {
+      echo "$j";
+    }
+    else {
+      echo "$j, ";
+    };
+  }
+  $x = $x - 1;
+  echo "</br>";
+}
 
-print_r($colors);
 ?>
 
 <!-- FOOTER, SCRIPTS & BODY(end) -->
